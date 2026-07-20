@@ -24,7 +24,7 @@
 \usepackage{parskip}
 \setlength{\parskip}{0.5\baselineskip}
 \usepackage{listings}
-\usepackage{cases}
+% \usepackage{cases} % tabular の列指定と衝突するためこの文書では無効化
 
 %-----theorem, remarks...----
 \usepackage{amsthm}
@@ -83,10 +83,171 @@
 
 \usepackage[unicode, hidelinks]{hyperref}
 
-\title{名古屋旅行のしおり}
+%===== しおり用の設定 =====
+\graphicspath{{NagoyaScreenShots/}}
+\definecolor{nagoyagold}{HTML}{B8860B}
+\definecolor{deepnavy}{HTML}{1B2A4A}
+\newcommand{\slot}[2]{\textbf{#1} & #2 \\}
+
+\title{\sffamily\bfseries\color{deepnavy}
+	名古屋旅行のしおり\\[0.3em]
+	{\large --- シャチとレースのお守りと、夜のお城のアフタヌーンティー ---}}
 \author{楓さん23歳の誕生日記念旅行}
+\date{2026年7月25日（土）〜 7月26日（日）　1泊2日}
 
 \begin{document}
-    \maketitle
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529164670.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529163255.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529163758.jpg}
+	\end{minipage}
+\end{center}
+
+\section*{はじめに}
+
+23歳のお誕生日、おめでとう。
+
+今回の行き先は名古屋。楓さんの「行きたい」を全部つなげて、
+1泊2日にぎゅっと詰め込みました。
+初日は大須のうさぎ神社でレースのお守りを受けて、名古屋めしを食べて、
+夜はライトアップされた大聖堂を眺めながらのアフタヌーンティー。
+2日目はシャチに会いに名古屋港水族館へ。イルカのブレスレットもここで。
+帰る前には、あの麻婆豆腐を食べる。
+
+新幹線とホテルはJR東海ツアーズの「EX旅パック」
+（新幹線＋宿泊のセットプラン）でまとめて予約。
+宿は大聖堂が目の前の\textbf{ストリングスホテル名古屋}です。
+
+\begin{center}
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529165656.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529165014.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{1784529164306.jpg}
+	\end{minipage}
+\end{center}
+
+\subsection*{行きたいところリスト}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.1em]
+	\item \textbf{三輪神社}（大須）--- うさぎ神社。レースのお守りとうさぎの御朱印
+	\item \textbf{名古屋港水族館} --- シャチとイルカ。シャチのスパイホップココアと
+	      イルカのブレスレット
+	\item \textbf{ストリングスホテル名古屋} --- 夜の大聖堂を眺めるアフタヌーンティー（宿泊もここ）
+	\item \textbf{立ち呑み中華 忘 bow}（矢場町）--- あの麻婆豆腐
+	\item \textbf{THE LOUNGE}（コートヤード・バイ・マリオット名古屋／栄）--- ホテルラウンジでカフェ休憩
+	\item \textbf{名古屋めし} --- うな富士（鰻）・矢田かつ（味噌カツ）・
+	      角丸（味噌煮込みうどん）ほか、例のリストから行けるだけ
+\end{itemize}
+
+\section*{きっぷと宿}
+
+\begin{itemize}[leftmargin=1.5em]
+	\item \textbf{予約方法}：JR東海ツアーズ「EX旅パック」で
+	      東海道新幹線（東京〜名古屋）＋ストリングスホテル名古屋1泊をセット予約。
+	      2名1室・1泊2日でひとり約2.5〜4.5万円が相場。
+	      EXサービスの会員登録が必要（無料）、出発前日まで予約可・列車変更は無料。
+	\item \textbf{宿}：ストリングスホテル名古屋（ささしまライブ／名古屋駅から徒歩約10分、
+	      あおなみ線なら1駅）。チェックイン15:00〜／チェックアウト11:00。
+	\item \textbf{乗車}：チケットレス。EXアプリのQRコード／交通系ICで改札を通る。
+\end{itemize}
+
+\section*{1日目　7月25日（土）--- 大須とうさぎと夜のお城}
+
+まずは大須でお参りと名古屋めし、夜はホテルで大聖堂を眺めながらのんびり。
+
+\begin{center}
+	\begin{tabular}{p{7.5em}p{27em}}
+		\toprule
+		\slot{08:30ごろ}{東京駅発「のぞみ」で名古屋へ（車内で朝ごはん・駅弁もあり）}
+		\slot{10:10}{名古屋駅着。ホテルへ移動して荷物だけ預ける}
+		\slot{11:00}{地下鉄で上前津へ。\textbf{三輪神社}（大須）にお参り。
+			なでうさぎをなでて、\textbf{レースのお守り}を受ける（授与所は9:00〜17:00）}
+		\slot{12:00}{大須商店街をぶらぶら食べ歩き}
+		\slot{12:45}{ランチは名古屋めし。第一希望は鶴舞の\textbf{炭焼うな富士}
+			（行列必至・早め到着推奨）。並びが厳しければ矢場町の味噌カツへ}
+		\slot{14:30}{栄へ移動。\textbf{コートヤード・バイ・マリオット名古屋
+				「THE LOUNGE」}（栄1丁目）でケーキとお茶のひと休み}
+		\slot{16:00}{ホテルにチェックイン。少しお昼寝\&お着替え}
+		\slot{17:30}{\textbf{ニューヨークラウンジのレイトアフタヌーンティー}。
+			ライトアップされた大聖堂を目の前に、スイーツ＋セイボリー＋飲み放題つき
+			（土日￥6,522＋サービス料15\%、最大3時間、要予約）}
+		\slot{20:30}{中庭の大聖堂と噴水のイルミネーションをお散歩して、部屋へ}
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\section*{2日目　7月26日（日）--- シャチの日}
+
+2日目は朝から水族館へ。締めは麻婆豆腐と、新幹線でのお土産タイム。
+
+\begin{center}
+	\begin{tabular}{p{7.5em}p{27em}}
+		\toprule
+		\slot{08:00}{ホテルで朝食}
+		\slot{09:00}{チェックアウト。荷物はフロントか名古屋駅のロッカーへ。
+			地下鉄を乗り継いで名古屋港駅へ（約40分）}
+		\slot{09:45}{\textbf{名古屋港水族館}（夏休み期間は9:30〜20:00・7月は無休）。
+			シャチプールの公開トレーニングとイルカパフォーマンスは
+			当日のスケジュール掲示を最初にチェック}
+		\slot{12:30}{館内レストラン「アリバダ」でランチ。
+			例のシャチのスパイホップココアはホットドリンクのため
+			冬季限定の可能性あり（あれば迷わず注文）}
+		\slot{13:30}{ミュージアムショップで\textbf{イルカのブレスレット}を探す}
+		\slot{15:00}{地下鉄で矢場町へ移動}
+		\slot{15:40}{\textbf{立ち呑み中華「忘 bow」}（矢場町・15時開店）で
+			早めの晩ごはん。お目当ての麻婆豆腐を}
+		\slot{17:30}{名古屋駅へ。お土産タイム（ぴよりんは売り切れ注意）}
+		\slot{18:30ごろ}{「のぞみ」で東京へ。20時すぎ着、おつかれさまでした}
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\section*{持ち物}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.1em]
+	\item スマホ（EXアプリ＝新幹線のきっぷ）・モバイルバッテリー
+	\item 交通系IC（地下鉄・あおなみ線用）・現金少々（大須の食べ歩き・神社の授与所用）
+	\item 日傘または帽子・日焼け止め・ハンディファン（7月末の名古屋は猛暑）
+	\item 水筒かペットボトル（こまめに水分補給）
+	\item アフタヌーンティー用の少しきれいめな服（スマートカジュアル）
+	\item 歩きやすい靴（大須〜水族館はよく歩く）
+	\item 常備薬・絆創膏・汗拭きシート
+	\item 御朱印帳（三輪神社の御朱印はうさぎ入りでかわいい）
+\end{itemize}
+
+\section*{注意事項・予約リスト}
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.1em]
+	\item \textbf{要予約（早い者勝ち）}：
+	      \begin{itemize}[leftmargin=1.2em]
+		      \item EX旅パック（新幹線＋ホテル）--- 決めたらすぐ確保
+		      \item レイトアフタヌーンティー --- TableCheckで。
+		            「大聖堂前・窓際確約」プランがあれば迷わずそちら
+		      \item 忘 bow --- ホットペッパーでネット予約可
+	      \end{itemize}
+	\item 三輪神社のお守り授与は\textbf{17:00まで}。初日の午前中に行くのはこのため
+	\item レースのお守りは人気色から品切れることがある。色は出会いもの
+	\item うな富士は開店前から行列。無理そうなら翌日の水族館ランチを鰻に変えてもOK
+	\item シャチのココアが夏はなくても落ち込まない。シャチは本物がいる
+	\item 水族館は再入館可。暑い日中は館内、夕方に外のデッキが快適
+	\item 熱中症対策は本気で。屋外の移動は短く、こまめにカフェ休憩を挟む
+\end{itemize}
+
+\vspace{1em}
+\begin{center}
+	{\sffamily\bfseries\color{nagoyagold} それでは、よい旅を。}
+\end{center}
 
 \end{document}
