@@ -1,6 +1,6 @@
 # デフォルトの無視対象ファイル
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 # 無視対象のデフォルトフォルダー (クエリファイルを含む)
 /queries/
 # Datasource local storage ignored files
@@ -8,3 +8,20 @@
 /dataSources.local.xml
 # エディターベースの HTTP クライアントリクエスト
 /httpRequests/
+
+# IntelliJ
+.idea/
+!.idea/templates/
+!.idea/templates/**
+*.iml
+.ai/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# LaTeX intermediate files
+**/out/*
