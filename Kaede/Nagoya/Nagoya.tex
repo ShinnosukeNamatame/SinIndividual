@@ -1,0 +1,92 @@
+\documentclass[a4paper,12pt]{article}
+
+%========================= % 基本パッケージ % =========================
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+\setmainjfont{Hiragino Mincho ProN}
+\setsansjfont{Hiragino Kaku Gothic ProN}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[
+	top=23mm,
+	bottom=18mm,
+	left=23mm,
+	right=23mm,
+	includehead,
+	includefoot
+]{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{parskip}
+\setlength{\parskip}{0.5\baselineskip}
+\usepackage{listings}
+\usepackage{cases}
+
+%-----theorem, remarks...----
+\usepackage{amsthm}
+\renewcommand{\qed}{$\blacksquare$}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{discussion}[theorem]{Discussion}
+\newtheorem{derivation}[theorem]{Derivation}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{proposition*}{Proposition}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem*{remark*}{Remark}
+
+%============ 図 ============
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+	\pgfmathdeclarefunction{asinh}{1}{%
+	\pgfmathparse{ln(#1 + sqrt(#1*#1 + 1))}%
+	}
+
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usetikzlibrary{arrows.meta}
+
+%===== カスタムコマンド =====
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\gmn}{g_{\mu\nu}}
+\newcommand{\schwrad}{r_{\mathrm{s}}}
+\newcommand{\xm}{x^{\mu}}
+\newcommand{\xn}{x^{\nu}}
+\newcommand{\Tdd}{T_{\mu\nu}}
+\newcommand{\Tuu}{T^{\mu\nu}}
+\newcommand{\Tdu}{T^{\nu}{}_{\mu}}
+\newcommand{\Tdud}{T^{\nu}{}_{\mu;\nu}}
+\newcommand{\Gdd}{G_{\mu\nu}}
+\newcommand{\Guu}{G^{\mu\nu}}
+\newcommand{\Gdu}{G^{\nu}{}_{\mu}}
+\newcommand{\Rdd}{R_{\mu\nu}}
+\newcommand{\mm}{Mazur--Mottola }
+\newcommand{\eint}{energy--momentum tensor }
+\newcommand{\sss}{static, spherically symmetric }
+\newcommand{\eq}{equation }
+\newcommand{\eqs}{equations }
+
+\usepackage[unicode, hidelinks]{hyperref}
+
+\title{名古屋旅行のしおり}
+\author{楓さん23歳の誕生日記念旅行}
+
+\begin{document}
+    \maketitle
+
+\end{document}
